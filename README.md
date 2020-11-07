@@ -1,6 +1,6 @@
 # Lan-scanner
 
-Le projet consiste à pouvoir scanner le réseau local, en exploitant la lenteur des réponses lors de `fetch`.
+Le projet consiste à pouvoir scanner le réseau local depuis un navigateur web, en exploitant la lenteur des réponses lors de `fetch`.
 
 # Installation
 
