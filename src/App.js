@@ -14,7 +14,7 @@ export default class App extends React.Component {
 		// Cette fonction permet de faire un ping HTTP sur un hote. L'avantage est qu'elle utilise le retour d'erreur de la fonction
 		// fetch, ce qui permet d'avoir le réseau utilisé par le client qui se connecte.
 		return new Promise((resolve, reject) => {
-			this.fetchWithTimeout("http://" + ip + ":45543", 4000, {})
+			this.fetchWithTimeout("//" + ip + ":45543", 4000, {})
 				.then(() => console.log("Ne devrait pas arriver"), onSuccess)
 		})
 	}
@@ -24,7 +24,7 @@ export default class App extends React.Component {
 		// adresse IP dans le state
 
 		return new Promise((resolve, reject) => {
-			this.fetchWithTimeout("http://" + ip + ":45543", timeout, {})
+			this.fetchWithTimeout("//" + ip + ":45543", timeout, {})
 				.then(() => { }, (err) => {
 					if ((('' + err).indexOf("aborted") === -1)) {
 						this.setState({ hosts: this.state.hosts.concat([ip]) })
