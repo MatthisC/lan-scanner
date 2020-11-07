@@ -2,6 +2,10 @@
 
 Le projet consiste à pouvoir scanner le réseau local depuis un navigateur web, en exploitant la lenteur des réponses lors de `fetch`.
 
+# Proof of concept
+
+https://lan-scanner.herokuapp.com/
+
 # Installation
 
 `npm install`
