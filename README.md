@@ -5,11 +5,12 @@ Le projet consiste à pouvoir scanner le réseau local, en exploitant la lenteur
 # Installation
 
 `npm install`
+
 `npm start`
 
 # Utilisation
 
-On peut modifier plusieurs paramètres : la précision, et le timeout
+On peut modifier plusieurs paramètres : la *précision*, et le *timeout*
 
 ### La précision
 
