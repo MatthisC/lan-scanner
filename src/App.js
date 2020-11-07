@@ -3,11 +3,11 @@ import React from 'react'
 export default class App extends React.Component {
 	state = {
 		hosts: [],
-		timeAsked: 100,
+		timeAsked: 15,
 		nbHostsScanned: 0,
 		scanned_networks: 0,
-		timeout: 300,
-		currentTimeout: 300
+		timeout: 1000,
+		currentTimeout: 1000
 	}
 
 	ping = async (ip, onSuccess) => {
