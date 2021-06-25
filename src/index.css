@@ -1,13 +1,103 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+  color: #f8f9fa;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  background: #343a40;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+#root > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+  background: #212529;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 12px 0px rgba(19, 22, 26, 0.5);
+}
+input {
+  border: none;
+  padding: 12px;
+  outline: 0;
+  background: #343a40;
+  border-radius: 50px;
+  color: #fff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button {
+  cursor: pointer;
+  padding: 12px;
+  background: #7c5cbf;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0px 8px 12px 0px rgba(19, 22, 26, 0.5);
+}
+button:hover {
+  background: #6b47b8;
+}
+button:disabled {
+  cursor: default;
+  background: #7c5cbf94;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button:checked{
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 10px;
+  background: #6b47b8;
+  outline: none;
+  border: none;
+  padding: 0;
+  outline: 0;
+  margin: 10px 0px;
+}
+
+/* Chrome */
+input[type=range]::-webkit-slider-runnable-track {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7c5cbf;
+  cursor: pointer;
+  box-shadow: 0 8px 12px 0 #13161a50;
+}
+/* Firefox */
+input[type=range]::-moz-range-track {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+input[type=range]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7c5cbf;
+  cursor: pointer;
+  box-shadow: 0 8px 12px 0 #13161a50;
+  border: none;
 }
